@@ -1,0 +1,19 @@
+\documentclass{report}
+\input{setup.tex}
+\begin{document}
+%
+% Front page
+\pagenumbering{alph} %frontpage numbered with a letter
+\input{content/00_frontmatter/frontpage.tex}
+%
+% MAIN CONTENT
+\clearpage
+\pagenumbering{arabic} %''normal'' arabic numbering from here on out
+\input{content/01_summary/summary.tex}
+% 
+% References
+\clearpage
+\nocite{*} % Includes all of the .bib content
+\printbibliography\addcontentsline{toc}{chapter}{References}
+%
+\end{document}
