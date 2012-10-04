@@ -1,0 +1,4 @@
+CupCollect-Doc
+==============
+
+CupCollect Documentation
