@@ -5,15 +5,18 @@
 % Front page
 \pagenumbering{alph} %frontpage numbered with a letter
 \input{content/00_frontmatter/frontpage.tex}
-%
+
 % MAIN CONTENT
 \clearpage
 \pagenumbering{arabic} %''normal'' arabic numbering from here on out
 \input{content/01_summary/summary.tex}
+\input{content/05_coverage/coverage.tex}
+\input{content/09_statemachine/statemachine.tex}
+% 
 % 
 % References
 \clearpage
 \nocite{*} % Includes all of the .bib content
-\printbibliography\addcontentsline{toc}{chapter}{References}
+\printbibliography\addcontentsline{toc}{chapter}{Bibliography}
 %
 \end{document}
